@@ -1,0 +1,382 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0b1020" />
+
+    <title>Md Eaftekhirul Islam — Portfolio</title>
+    <meta name="description"
+        content="Software Engineering student at Zhengzhou University. Web development projects, research work, and a practical, systems-first approach to problem solving." />
+
+    <meta property="og:title" content="Md Eaftekhirul Islam — Portfolio" />
+    <meta property="og:description"
+        content="Software Engineering student (ZZU). Web development + research projects. Interested in problem solving and AI." />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Md Eaftekhirul Islam",
+                "email": "eafte1@outlook.com",
+        "sameAs": [
+          "https://www.linkedin.com/in/eaftekhirul/",
+          "https://github.com/eis-1"
+        ],
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "Zhengzhou University"
+        },
+        "jobTitle": "Software Engineering Student"
+      }
+    </script>
+</head>
+
+<body>
+    <a class="skip" href="#content">Skip to content</a>
+
+    <header class="header">
+        <div class="container header__inner">
+            <a class="brand" href="#top" aria-label="Go to top">
+                <span class="brand__mark">EI</span>
+                <span class="brand__text">Eaftekhirul</span>
+            </a>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header__actions">
+                <button class="btn btn--ghost" id="themeToggle" type="button" aria-label="Toggle theme">
+                    Theme
+                </button>
+                <a class="btn" href="#contact">Let’s connect</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="content">
+        <section class="hero" id="top">
+            <div class="container hero__inner">
+                <div class="hero__copy">
+                    <p class="kicker">Software Engineering Student @ Zhengzhou University</p>
+                    <h1>
+                        I build clean, functional web experiences—
+                        <span class="accent">and I love understanding systems.</span>
+                    </h1>
+                    <p class="lede">
+                        I’m <strong>Md Eaftekhirul Islam</strong>. I work on academic and practical projects across
+                        web development, documentation, and product thinking. Long-term, I want to grow into
+                        problem-solving roles and explore AI-driven solutions.
+                    </p>
+
+                    <div class="hero__cta">
+                        <a class="btn" href="#projects">View projects</a>
+                        <a class="btn btn--ghost" href="https://github.com/eis-1" target="_blank"
+                            rel="noopener noreferrer">GitHub</a>
+                        <a class="btn btn--ghost" href="https://www.linkedin.com/in/eaftekhirul/" target="_blank"
+                            rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+
+                    <ul class="hero__highlights" aria-label="Highlights">
+                        <li>Full‑stack B2B app (React + TS + Express + Prisma)</li>
+                        <li>Python GUI app (Tkinter + SQLite) with 80+ passing tests</li>
+                        <li>Research/report writing + structured documentation</li>
+                    </ul>
+                </div>
+
+                <div class="hero__card" aria-label="Quick facts">
+                    <div class="card">
+                        <div class="card__row">
+                            <div class="card__label">Location</div>
+                            <div class="card__value">Zhengzhou, China</div>
+                        </div>
+                        <div class="card__row">
+                            <div class="card__label">Focus</div>
+                            <div class="card__value">Web Dev • Systems Thinking • Research</div>
+                        </div>
+                        <div class="card__row">
+                            <div class="card__label">Open to</div>
+                            <div class="card__value">Internships • Collaborations</div>
+                        </div>
+                        <div class="card__row">
+                            <div class="card__label">GitHub</div>
+                            <div class="card__value"><a href="https://github.com/eis-1" target="_blank"
+                                    rel="noopener noreferrer">github.com/eis-1</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Projects</h2>
+                    <p>
+                        A small selection of projects from coursework and hands-on practice.
+                        Each one focuses on real features, clear structure, and learning by building.
+                    </p>
+                </div>
+
+                <div class="grid">
+                    <article class="project">
+                        <div class="project__top">
+                            <h3>Electrical Supplier Website (B2B)</h3>
+                            <p class="muted">Full-stack platform with quote workflow and admin panel.</p>
+                        </div>
+                        <ul class="tags" aria-label="Tech stack">
+                            <li>React</li>
+                            <li>Vite</li>
+                            <li>TypeScript</li>
+                            <li>Express</li>
+                            <li>Prisma</li>
+                            <li>SQLite</li>
+                        </ul>
+                        <ul class="bullets">
+                            <li>Product catalog with brand & category management</li>
+                            <li>Quote request flow (B2B: quote-first, not cart-first)</li>
+                            <li>Secure admin login + CRUD operations + uploads</li>
+                            <li>Single-port deployment (Express serves API + built frontend)</li>
+                        </ul>
+                        <div class="project__links">
+                            <a class="btn btn--ghost" href="https://github.com/eis-1/electrical-supplier-website"
+                                target="_blank" rel="noopener noreferrer">Repo</a>
+                            <a class="btn btn--ghost"
+                                href="https://github.com/eis-1/electrical-supplier-website#-quick-start" target="_blank"
+                                rel="noopener noreferrer">Run locally</a>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__top">
+                            <h3>IODEX — GUI Expense Tracker</h3>
+                            <p class="muted">Personal expense tracker with analysis tools and strong testing.</p>
+                        </div>
+                        <ul class="tags" aria-label="Tech stack">
+                            <li>Python</li>
+                            <li>Tkinter</li>
+                            <li>SQLite</li>
+                            <li>Pandas</li>
+                            <li>Plotly</li>
+                            <li>PyInstaller</li>
+                        </ul>
+                        <ul class="bullets">
+                            <li>Add/view/edit/delete expenses with clean UI</li>
+                            <li>SQLite storage + automatic migrations</li>
+                            <li>Charts + category insights + import/export (CSV/JSON)</li>
+                            <li>Timezone system (450+ timezones) + flexible timestamps</li>
+                            <li>80+ unit tests passing; documented developer workflow</li>
+                        </ul>
+                        <div class="project__links">
+                            <a class="btn btn--ghost" href="https://github.com/eis-1/IODEX_Expense_Tracker"
+                                target="_blank" rel="noopener noreferrer">Repo</a>
+                            <a class="btn btn--ghost"
+                                href="https://github.com/eis-1/IODEX_Expense_Tracker/blob/main/QUICKSTART.md"
+                                target="_blank" rel="noopener noreferrer">Quickstart</a>
+                        </div>
+                    </article>
+
+                    <article class="project">
+                        <div class="project__top">
+                            <h3>Discrete Mathematics Project — Group 11</h3>
+                            <p class="muted">Final course submission: PDF report + PPTX presentation slides.</p>
+                        </div>
+                        <ul class="tags" aria-label="Deliverables">
+                            <li>Coursework</li>
+                            <li>PDF report</li>
+                            <li>PPTX slides</li>
+                            <li>Status: archived</li>
+                        </ul>
+                        <ul class="bullets">
+                            <li>Includes the final written report (problem statement, methods/solutions, conclusions)
+                            </li>
+                            <li>Topic: AI integration in industrial robotics (as covered in the report)</li>
+                            <li>Includes presentation slides prepared for viva/class presentation</li>
+                            <li>Completed course deliverables (no further development planned)</li>
+                        </ul>
+                        <div class="project__links">
+                            <a class="btn btn--ghost"
+                                href="https://github.com/eis-1/The-Integration-of-AI-in-Industrial-Robotics"
+                                target="_blank" rel="noopener noreferrer">Repo</a>
+                            <a class="btn btn--ghost"
+                                href="https://github.com/eis-1/The-Integration-of-AI-in-Industrial-Robotics/blob/main/Report%20-%20Google%20Docs.pdf"
+                                target="_blank" rel="noopener noreferrer">Read report</a>
+                            <a class="btn btn--ghost"
+                                href="https://github.com/eis-1/The-Integration-of-AI-in-Industrial-Robotics/blob/main/PROJECT%20OF%20Discrete%20Math.pptx"
+                                target="_blank" rel="noopener noreferrer">View slides</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Skills</h2>
+                    <p>Core skills and fundamentals I’m actively practicing through coursework and projects.</p>
+                </div>
+
+                <div class="skills">
+                    <div class="skillBlock">
+                        <h3>Web</h3>
+                        <ul>
+                            <li>HTML, CSS, JavaScript (fundamentals)</li>
+                            <li>React + Vite (basics)</li>
+                            <li>TypeScript (basics)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skillBlock">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node.js + Express (basics)</li>
+                            <li>Prisma ORM (basics)</li>
+                            <li>SQLite (fundamentals)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skillBlock">
+                        <h3>Python</h3>
+                        <ul>
+                            <li>Tkinter GUI (basics)</li>
+                            <li>Data analysis (Pandas basics)</li>
+                            <li>Testing (pytest basics)</li>
+                        </ul>
+                    </div>
+
+                    <div class="skillBlock">
+                        <h3>Professional</h3>
+                        <ul>
+                            <li>Documentation & report writing</li>
+                            <li>Analytical thinking</li>
+                            <li>Prompting & structured outputs (fundamentals)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Experience</h2>
+                    <p>Real-world exposure through a family business and leadership initiatives.</p>
+                </div>
+
+                <div class="timeline">
+                    <div class="timelineItem">
+                        <div class="timelineItem__title">
+                            <h3>Analyst — MR INTERNATIONAL</h3>
+                            <span class="muted">Family business • 2016 — Present</span>
+                        </div>
+                        <ul class="bullets">
+                            <li>Support business decisions with analysis and structured problem-solving</li>
+                            <li>Explore and practice web presence improvements through side builds</li>
+                            <li>Work closely with real constraints: pricing, customer needs, and operations</li>
+                        </ul>
+                        <p class="note">
+                            Note: This is a family business role. Portfolio examples are for learning/practice unless
+                            explicitly deployed.
+                        </p>
+                    </div>
+
+                    <div class="timelineItem">
+                        <div class="timelineItem__title">
+                            <h3>Chief Executive Officer — JRSphere™</h3>
+                            <span class="muted">May 2025 — Present</span>
+                        </div>
+                        <ul class="bullets">
+                            <li>Leadership experience: organizing goals, communication, and execution</li>
+                            <li>Building habits around systems thinking and continuous learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="education">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Education</h2>
+                    <p>Academic foundation in software engineering with ongoing coursework.</p>
+                </div>
+
+                <div class="cards">
+                    <div class="card">
+                        <h3>Zhengzhou University</h3>
+                        <p class="muted">BSc — Software Engineering • Sep 2023 — Jun 2027</p>
+                        <ul class="bullets">
+                            <li>Coursework includes programming foundations, discrete mathematics, and engineering
+                                practices</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>Sabujbagh Government College</h3>
+                        <p class="muted">HSC — Science • Jul 2019 — Feb 2022</p>
+                        <ul class="bullets">
+                            <li>Activities: Cricket, Football, Volleyball</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section__head">
+                    <h2>Contact</h2>
+                    <p>
+                        Want to collaborate, discuss projects, or offer an internship opportunity?
+                        Reach out—happy to connect.
+                    </p>
+                </div>
+
+                <div class="contact">
+                    <div class="card">
+                        <h3>Links</h3>
+                        <ul class="links">
+                            <li><a href="https://www.linkedin.com/in/eaftekhirul/" target="_blank"
+                                rel="noopener noreferrer">LinkedIn</a></li>
+                            <li><a href="https://github.com/eis-1" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                            </ul>
+                        <p class="small muted">Email: <a href="mailto:eafte1@outlook.com">eafte1@outlook.com</a></p>
+                    </div>
+
+                    <div class="card">
+                        <h3>What I’m looking for</h3>
+                        <ul class="bullets">
+                            <li>Internships (Software Engineering / Web Development)</li>
+                            <li>Project collaborations (frontend, full-stack basics, documentation)</li>
+                            <li>Opportunities to learn problem-solving and grow toward AI-focused work</li>
+                        </ul>
+                        <p class="note">
+                            Best way to reach me is via LinkedIn. If you email, please include a short description of
+                            the role/project and your timeline.
+                        </p>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <p>© <span id="year"></span> Md Eaftekhirul Islam. Built for GitHub Pages.</p>
+                </footer>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
