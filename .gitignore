@@ -1,0 +1,23 @@
+# OS / system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Node / build artifacts (if you add tooling later)
+node_modules/
+dist/
+build/
+
+# Python caches (if you add scripts later)
+__pycache__/
+*.py[cod]
+
+# Env files
+.env
