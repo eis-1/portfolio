@@ -1,38 +1,70 @@
-# Portfolio (GitHub Pages)
+# Portfolio — Md Eaftekhirul Islam
 
-This is a simple, modern, single-page portfolio site for **Md Eaftekhirul Islam**.
+A clean, single‑page portfolio optimized for readability and recruiter scanning. Built as a static site suitable for GitHub Pages.
 
-## Customize
+## Overview
 
-Open `index.html` and update:
+- Purpose: present projects, skills, and education with a professional tone
+- Stack: HTML, CSS, vanilla JavaScript (no build tooling required)
+- Theme: metallic blue palette with subtle, distant background animation
+- Accessibility: honors `prefers-reduced-motion` and keeps content contrast high
 
-- Name, headline, and About paragraph
-- Email placeholder in the Contact section
-- Optional: add a Resume link (Google Drive / PDF)
-- Optional: add screenshots (create an `assets/` folder and reference images)
+## Features
 
-## Deploy on GitHub Pages (recommended)
+- Dark/Light theme toggle with persistence (`localStorage`)
+- Full‑page canvas background (Three.js) tuned for calm visuals
+- Micro‑interactions (hover lift, gradient accent, scroll reveal)
+- Secure external links (`rel="noopener noreferrer"`)
+- JSON‑LD Person schema (basic metadata)
 
-### Option A (best): `eis-1.github.io`
+## File Structure
 
-1. Create a new repository named: **`eis-1.github.io`**
-2. Upload the contents of this folder (`index.html`, `styles.css`, `script.js`, etc.)
-3. On GitHub: Settings → Pages
-   - Source: **Deploy from a branch**
-   - Branch: **main**
-   - Folder: **/** (root)
-4. Your site will be live at: `https://eis-1.github.io/`
+```
+index.html    # page markup and JSON-LD
+styles.css    # theme, layout, animations
+script.js     # theme toggle, background animation, reveals
+favicon.svg   # site icon
+.gitignore    # repo hygiene
+```
 
-### Option B: any repo name
+## Local Preview
 
-1. Push this folder into a repo (e.g., `portfolio`)
-2. Settings → Pages
-   - Branch: **main**
-   - Folder: **/portfolio** (if you keep it in a subfolder)
+You can open `index.html` directly in a browser. For a nicer experience, use a simple static server:
 
-> Tip: GitHub Pages expects static files. For full-stack apps, deploy backend separately.
+```
+# Option 1: Python (if installed)
+python -m http.server 8000
 
-## Notes
+# Option 2: Node.js (if installed)
+npx serve .
+```
 
-- The project links in the Projects section point to the public GitHub repos.
-- The full-stack B2B project (`electrical-supplier-website`) is not a GitHub Pages app by itself (it has a backend). This portfolio links to the repo; for a live demo you can use a cloud host.
+Then visit `http://localhost:8000` (or the address printed by the server).
+
+## Deployment (GitHub Pages)
+
+1. Push this folder to a GitHub repository (e.g., `eis-1/portfolio`).
+2. On GitHub: Settings → Pages → Build and deployment
+   - Source: Deploy from a branch
+   - Branch: `main` (root)
+3. Your site will be available at `https://<username>.github.io/<repo>/`.
+
+Notes:
+- This portfolio is static; no backend required.
+- For full‑stack demos, deploy the backend separately and link it from the portfolio.
+
+## Accessibility
+
+- Respects `prefers-reduced-motion: reduce` to disable animations
+- Keyboard‑focus styles are present (`:focus-visible`)
+- High‑contrast text on dark backgrounds
+
+## Maintenance
+
+- Content lives in `index.html`
+- Styling tweaks in `styles.css`
+- Behavior and animation tuning in `script.js`
+
+## License
+
+Personal portfolio; licensed for personal use. If you fork, please adjust content and attribution accordingly.
